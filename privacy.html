@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How VPS Live Files accesses, uses, stores, and protects Google Drive data.">
+  <title>Privacy policy · VPS Live Files</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="VPS Live Files home"><span class="brand-mark" aria-hidden="true">VF</span> VPS Live Files</a>
+    <nav aria-label="Main navigation"><a href="./">Home</a></nav>
+  </header>
+  <main id="main" class="wrap policy">
+    <p class="eyebrow">VPS Live Files</p>
+    <h1>Privacy policy</h1>
+    <p class="updated">Effective October 1, 2026</p>
+    <p>VPS Live Files is a private Google Drive integration operated by Phinehas Adams. It uses rclone to provide storage for selected live application files on the operator’s virtual private server. This policy covers that integration and this public information website.</p>
+    <section aria-labelledby="access-title">
+      <h2 id="access-title">Google data accessed</h2>
+      <p>The application requests <code>https://www.googleapis.com/auth/drive.file</code>. This permission limits access to files created by the application or files explicitly opened or shared with it. Within that access, the application can read file contents and metadata such as names, identifiers, sizes, folder relationships, and modification times, and can create, update, download, or delete files as required by the connected applications.</p>
+      <p>Google supplies OAuth access and refresh tokens after authorization. The integration does not collect the Google account password.</p>
+    </section>
+    <section aria-labelledby="use-title">
+      <h2 id="use-title">How data is used</h2>
+      <p>File contents and metadata are used only to store, retrieve, synchronize, and manage the operator’s application files. OAuth tokens maintain the authorized connection to Drive. Operational logs may include file names, synchronization status, and errors needed to operate and troubleshoot the integration.</p>
+      <p>Google user data is not sold, used for advertising, or used to develop or train AI or machine learning models.</p>
+    </section>
+    <section aria-labelledby="storage-title">
+      <h2 id="storage-title">Storage and protection</h2>
+      <p>Application files are stored in the authorized Google Drive account. Files may also be held in a temporary cache on the operator’s server. OAuth credentials and token configuration are stored on the server with filesystem access restricted to its administrator. Connections to Google’s APIs use HTTPS.</p>
+      <p>The public GitHub repository and website contain only informational pages. They do not contain OAuth credentials, access tokens, or stored application files.</p>
+    </section>
+    <section aria-labelledby="sharing-title">
+      <h2 id="sharing-title">Data sharing</h2>
+      <p>Data is processed by Google Drive, the operator’s server hosting provider, and the applications the operator connects to this storage. The integration does not make Drive files public or share them with unrelated third parties. Disclosure may occur if required by applicable law.</p>
+      <p>This website is hosted by GitHub Pages. GitHub may process website request information under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. This site adds no analytics, advertising scripts, or cookies.</p>
+    </section>
+    <section aria-labelledby="retention-title">
+      <h2 id="retention-title">Retention, deletion, and revoking access</h2>
+      <p>Files remain in Drive until the operator or a connected application deletes them. Local caches and operational logs are retained as needed for file access and troubleshooting; the server administrator can remove them. Copies and backups maintained by connected applications have their own retention settings.</p>
+      <p>The account owner can revoke this application’s access in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access prevents further access through the revoked authorization; it does not automatically delete existing Drive files, caches, logs, or backups. To remove integration data, stop the integration, revoke authorization, and have the server administrator remove its tokens, caches, and logs. Delete unwanted Drive files and any separately maintained copies through their respective applications.</p>
+    </section>
+    <section aria-labelledby="limited-use-title">
+      <h2 id="limited-use-title">Google API Limited Use</h2>
+      <p>VPS Live Files’ use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact and policy changes</h2>
+      <p>For questions or deletion assistance, contact Phinehas Adams through the <a href="https://github.com/phinehas2020/vps-rclone/issues">project’s GitHub issues</a>. Please do not include private data or credentials in a public issue. Updates to this policy will be published here with a revised effective date.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>VPS Live Files · Phinehas Adams</span><a href="./">Home</a></footer>
+</body>
+</html>

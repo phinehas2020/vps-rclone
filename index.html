@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VPS Live Files is a private rclone integration for storing live application files in Google Drive.">
+  <title>VPS Live Files</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="VPS Live Files home"><span class="brand-mark" aria-hidden="true">VF</span> VPS Live Files</a>
+    <nav aria-label="Main navigation"><a href="privacy.html">Privacy policy</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">Private rclone integration</p>
+      <h1 id="title">Google Drive for live application files.</h1>
+      <p class="lede">VPS Live Files connects Google Drive to a virtual private server through <a href="https://rclone.org/">rclone</a>, so selected applications can store and retrieve their files using the operator’s Drive storage.</p>
+      <p class="owner">Operated by Phinehas Adams for private infrastructure use.</p>
+    </section>
+    <section class="details" aria-labelledby="about-title">
+      <h2 id="about-title">What the application does</h2>
+      <p>The integration manages application files and attachments in Google Drive and uses a temporary local cache for file access. Databases, operating system files, and application services remain on the server.</p>
+      <p>Google authorization is used to create, read, update, and delete files accessible to this application. The integration requests the limited <code>drive.file</code> permission.</p>
+    </section>
+    <section class="details" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Your files stay private</h2>
+      <p>Access is used only to provide the operator’s file storage integration. Drive data is never sold or used for advertising or AI model training. This public information site does not receive OAuth tokens or display stored application files.</p>
+      <a class="text-link" href="privacy.html">Read the privacy policy <span aria-hidden="true">→</span></a>
+    </section>
+    <section class="details" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>For questions about this integration or its privacy policy, contact the operator through the <a href="https://github.com/phinehas2020/vps-rclone/issues">project’s GitHub issues</a>. Please keep private files and credentials out of public issues.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>VPS Live Files · Phinehas Adams</span><a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
